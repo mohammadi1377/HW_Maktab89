@@ -18,7 +18,7 @@ class Bank:
         self.letters_guessed_counter = 0
         self.not_solved = True
         self.letters_already_guessed = []
-        self.api_response_status = False  #+self.api_response_status = False
+        self.api_response_status = False #+self.api_response_status = False
 
     def pick_topic(self):
         if self.api_response_status == False:#CHANGE
