@@ -21,7 +21,7 @@ class Bank:
         self.api_response_status = False #+self.api_response_status = False
 
     def pick_topic(self):
-        if self.api_response_status == False:#CHANGE
+        if self.api_response_status == False: #change
             self.current_topic = choice(self.topic_names)
             print(f'Topic: {self.current_topic}')
         else:
