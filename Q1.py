@@ -28,9 +28,10 @@ class Bank:
             print('Topic: NOUN')
 
     def get_word(self):
-        response = requests.get(f"{self.api}", headers={'X-Api-Key': f"{self.api_key}"}, params={type:'noun'}) #import requests
+        #import requests
+        response = requests.get(f"{self.api}", headers={'X-Api-Key': f"{self.api_key}"}, params={type:'noun'})  
         if response.status_code == 200:
-            word = json.loads(response.text)  #import json
+            word = json.loads(response.text) #import json
             self.api_response_status = True
             self.current_word = word['word']
         else:
